@@ -33,7 +33,7 @@
     "image-webpack-loader": "^3.4.2",
     "rimraf": "^2.6.2",
     "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
+    "url-loader": "^0.6.2",
     "webpack": "^2.6.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.8.2"

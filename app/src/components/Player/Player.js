@@ -193,16 +193,22 @@ export class Player extends React.Component {
                 <Button
                   onClick={
                     () => {
-                      this.setState({
-                        currentUrl: this.playPrevAudio()
-                      });
+                      if (this.state.currentUrl) {
+                        this.setState({
+                          currentUrl: this.playPrevAudio()
+                        });
+                      } else {
+                        this.setState({
+                          message: 'You should choose at least one track'
+                        });
+                      }
                     }
                   }
                 >
                   <img
                     ref='prev_button'
                     className='play-button'
-                    src='./app/assets/play-previous.svg'
+                    src={require('./../../../assets/play-previous.svg')}
                     alt='prev_previous'
                   />
                 </Button>
@@ -222,23 +228,29 @@ export class Player extends React.Component {
                 <img
                   ref='play_button'
                   className='play-button'
-                  src='./app/assets/play-button.svg'
+                  src={require('./../../../assets/play-button.svg')}
                   alt='play_button'
                 />
                 </Button>
                 <Button
                   onClick={
                     () => {
-                      this.setState({
-                        currentUrl: this.playNextAudio()
-                      });
+                      if (this.state.currentUrl) {
+                        this.setState({
+                          currentUrl: this.playNextAudio()
+                        });
+                      } else {
+                        this.setState({
+                          message: 'You should choose at least one track'
+                        });
+                      }
                     }
                   }
                 >
                   <img
                     ref='next_button'
                     className='play-button'
-                    src='./app/assets/play-next.svg'
+                    src={require('./../../../assets/play-next.svg')}
                     alt='play_next'
                   />
                 </Button>
