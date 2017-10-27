@@ -1,5 +1,5 @@
 {
-  "name": "sold",
+  "name": "jetruby_test",
   "version": "1.0.0",
   "description": "Front End",
   "main": "app.js",
@@ -11,18 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avoytovich/sold_frontend.git"
+    "url": "git+https://github.com/avoytovich/jetruby.git"
   },
   "author": "andrii voitovych",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/avoytovich/sold_frontend/issues"
+    "url": "https://github.com/avoytovich/jetruby.git/issues"
   },
-  "homepage": "https://github.com/avoytovich/sold_frontend#readme",
+  "homepage": "https://github.com/avoytovich/jetruby.git#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.7",
     "express": "^4.15.4",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -37,6 +39,8 @@
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
-    "react": "^15.6.1"
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^15.6.1"
   }
 }

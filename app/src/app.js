@@ -1,14 +1,9 @@
-import '../styles/image_viewer.css';
-import sum from './sum.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log(sum(5, 315));
-const button = document.createElement('button');
-button.innerText = 'Click me';
-button.onclick = () => {
-  System.import('./image_viewer.js')
-    .then(module => {
-      module.default();
-    });
-};
+import { Player } from './components/Player/Player';
 
-document.body.appendChild(button);
+ReactDOM.render(
+    <Player />,
+  document.getElementById('root')
+);
