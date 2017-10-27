@@ -161,9 +161,9 @@ export class Player extends React.Component {
       }
 
       if (this.state.playing && this.state.currentUrl && audio.currentTime) {
-        this.refs.play_button.src = './app/assets/pause.svg';
+        this.refs.play_button.src = require('./../../../assets/pause.svg');
       } else {
-        this.refs.play_button.src = './app/assets/play-button.svg';
+        this.refs.play_button.src = require('./../../../assets/play-button.svg');
       }
 
       if (this.is_progress_dirty) {
